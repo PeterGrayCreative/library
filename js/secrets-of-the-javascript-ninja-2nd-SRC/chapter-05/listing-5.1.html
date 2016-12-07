@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>A simple closure</title>
+  <meta charset="utf-8">
+  <script src="../assert.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assert.css">
+</head>
+
+<body>
+	<script>
+	  var outerValue = "ninja";
+    var testValue = true;
+    function outerFunction() {
+      assert(outerValue === "ninja","I can see the ninja.");
+    }
+    outerFunction();
+   function testAssert(){
+     assert(testValue === true, 'this will print if assertion lib works');
+   }
+   testAssert();
+  </script>
+</body>
+</html>
